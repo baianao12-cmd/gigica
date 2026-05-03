@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geovanna Castilho | 19 Anos 🐎</title>
+    <!-- Bibliotecas de Confetes e Ícones -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #e60000; 
+            --bg: #0a0a0a;      
+            --text: #ffffff;
+            --secondary: #1a1a1a; 
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            text-align: center;
+        }
+
+        /* Menu */
+        nav {
+            background: var(--secondary);
+            padding: 1.2rem;
+            position: sticky;
+            top: 0;
+            border-bottom: 2px solid var(--primary);
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        /* Seções */
+        section {
+            display: none;
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .active { display: block; }
+
+        h1 { color: var(--primary); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { font-weight: normal; letter-spacing: 2px; color: #ccc; }
+
+        .horse-icon {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        /* Botão */
+        .btn-confete {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(230, 0, 0, 0.4);
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-confete:hover { transform: scale(1.05); background: #ff1a1a; }
+
+        /* Galeria com os links fornecidos */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border: 2px solid var(--secondary);
+            border-radius: 5px;
+            transition: 0.4s;
+        }
+
+        .galeria img:hover { border-color: var(--primary); transform: scale(1.02); }
+
+        /* Texto Personalizado */
+        .texto-amor {
+            line-height: 1.8;
+            font-size: 1.25rem;
+            background: var(--secondary);
+            padding: 3rem;
+            border-left: 5px solid var(--primary);
+            text-align: left;
+            border-radius: 4px;
+            white-space: pre-wrap;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer { padding: 2rem; font-size: 0.9rem; color: #444; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a onclick="showSection('inicio')">Início</a>
+    <a onclick="showSection('fotos')">Nossa Galeria</a>
+    <a onclick="showSection('texto')">Para a Gi</a>
+</nav>
+
+<!-- ABA PRINCIPAL -->
+<section id="inicio" class="active">
+    <div class="horse-icon"><i class="fas fa-horse"></i></div>
+    <h1>Geovanna Castilho</h1>
+    <h2>FELIZ 19 ANOS DA MINHA NAMORADA</h2>
+    <p>Um espaço dedicado a você e aos nossos 4 anos de história.</p>
+    <button class="btn-confete" onclick="lancarConfete()">COMEMORAR OS 19 DA GI! 🐎✨</button>
+</section>
+
+<!-- ABA DE FOTOS COM SEUS LINKS -->
+<section id="fotos">
+    <div class="horse-icon"><i class="fas fa-horse-head"></i></div>
+    <h1>Nossos Momentos</h1>
+    <div class="galeria">
+        <img src="https://i.postimg.cc/06cn1gZm/0fabf9e1-1dea-4677-86e4-da2c3f86bd29.jpg" alt="Foto Gi 1">
+        <img src="https://i.postimg.cc/SXDdb0VX/1548690c-0e17-4d4c-8dd0-72b1870b8a60.jpg" alt="Foto Gi 2">
+        <img src="https://i.postimg.cc/t1XkcRdW/769b823a-5851-4e42-ae94-b5a3567ac45a.jpg" alt="Foto Gi 3">
+        <img src="https://i.postimg.cc/mc8jWxV9/a7663173-834c-4c8a-95f1-bbfc2f7beb34.jpg" alt="Foto Gi 4">
+        <img src="https://i.postimg.cc/CZm7pyJz/ae23b50f-579e-4a74-8939-452bc2b64640.jpg" alt="Foto Gi 5">
+        <img src="https://i.postimg.cc/NypDvhbK/dc592830-4319-46f0-af76-2d560d9b9b54.jpg" alt="Foto Gi 6">
+        <img src="https://i.postimg.cc/t12kG0Dx/edcb886e-7b83-4aa9-a142-248f73939a6e.jpg" alt="Foto Gi 7">
+        <img src="https://i.postimg.cc/cKXhGqTw/f0f90034-0531-4d45-8d7f-614019ea0c11.jpg" alt="Foto Gi 8">
+        <img src="https://i.postimg.cc/nsH2WVKK/fce24039-eec7-4aed-8317-312689c66825.jpg" alt="Foto Gi 9">
+        <img src="https://i.postimg.cc/KKJfhXQw/IMG-1586.jpg" alt="Foto Gi 10">
+        <img src="https://i.postimg.cc/zL07YmpQ/IMG-1779.jpg" alt="Foto Gi 11">
+        <img src="https://i.postimg.cc/2q2GNpTJ/IMG-1988.jpg" alt="Foto Gi 12">
+        <img src="https://i.postimg.cc/gwNsb94D/IMG-1991.jpg" alt="Foto Gi 13">
+        <img src="https://i.postimg.cc/FfDpXtGg/IMG-2074.jpg" alt="Foto Gi 14">
+        <img src="https://i.postimg.cc/8Ft4g8w0/IMG-2096.jpg" alt="Foto Gi 15">
+        <img src="https://i.postimg.cc/v13hwRXP/IMG-2102.jpg" alt="Foto Gi 16">
+    </div>
+</section>
+
+<!-- ABA DE TEXTO PERSONALIZADO -->
+<section id="texto">
+    <div class="horse-icon"><i class="fas fa-heart"></i></div>
+    <h1>Para Minha Gi ❤️</h1>
+    <div class="texto-amor">Feliz aniversário, meu amor.
+
+Esse espaço é só uma pequena forma de mostrar o quanto você é importante pra mim. Mesmo assim, nenhuma palavra vai ser suficiente pra descrever tudo o que eu sinto por você.
+
+A gente já viveu tanta coisa juntos… desde o começo, lá atrás, até hoje. Eu ainda lembro de momentos simples que ficaram marcados, e é incrível pensar que hoje já são 4 anos ao seu lado. Ver você crescendo, evoluindo e se tornando essa pessoa incrível que você é hoje me enche de orgulho.
+
+Você é o meu lugar de paz, meu porto seguro e a pessoa com quem eu quero dividir todos os dias da minha vida — os bons e os difíceis. Porque com você, tudo faz mais sentido.
+
+Obrigado por ser essa pessoa tão especial, por cuidar de mim, por estar comigo em todos os momentos e por fazer minha vida mais leve e mais feliz.
+
+Eu desejo que esse novo ciclo seja cheio de coisas boas, conquistas, sonhos realizados e muita felicidade. E quero que você saiba que eu vou estar ao seu lado em cada passo, te apoiando, te incentivando e te amando cada vez mais.
+
+Esse site é só um detalhe perto de tudo que você merece… mas é de coração.
+
+Eu te amo muito. Para sempre nós.</div>
+</section>
+
+<footer>
+    Criado com amor para Geovanna Castilho
+</footer>
+
+<script>
+    function showSection(id) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(sec => sec.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function lancarConfete() {
+        var duration = 4 * 1000;
+        var animationEnd = Date.now() + duration;
+        var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+        function randomInRange(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+
+        var interval = setInterval(function() {
+          var timeLeft = animationEnd - Date.now();
+          if (timeLeft <= 0) return clearInterval(interval);
+
+          var particleCount = 50 * (timeLeft / duration);
+          
+          confetti(Object.assign({}, defaults, { 
+            particleCount, 
+            origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+            colors: ['#e60000', '#ffd700', '#ffffff']
+          }));
+          confetti(Object.assign({}, defaults, { 
+            particleCount, 
+            origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+            colors: ['#e60000', '#ffd700', '#000000']
+          }));
+        }, 250);
+    }
+</script>
+
+</body>
+</html>
